@@ -1,3 +1,8 @@
+:root {
+  --vermelho-claro: #ee2211;
+  --vermelho: #900;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +21,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
 header {
   display: flex;
   flex-direction: column;
@@ -25,10 +28,12 @@ header {
   gap: 60px;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   max-width: 60ch;
 }
-
 
 .img-logo {
   width: auto;
@@ -191,8 +196,7 @@ p {
   text-align: center;
 }
 
-@media(max-width: 1000px) {
-
+@media (max-width: 1000px) {
   .content-vantagem {
     grid-template-columns: 1fr;
   }
@@ -204,16 +208,12 @@ p {
   .description-nimbus {
     text-align: center;
   }
- 
-  
 }
 
-@media(max-width: 600px) {
-
+@media (max-width: 600px) {
   body {
     gap: 30px;
     margin-top: 30px;
-    
   }
 
   header {
@@ -238,12 +238,9 @@ p {
   .subtitle {
     font-size: 3rem;
   }
-
-
 }
 
 @media (max-width: 400px) {
-
   h1 {
     font-size: 2rem;
     text-align: center;
@@ -256,5 +253,4 @@ p {
   p {
     font-size: 1rem;
   }
-
-} 
+}
