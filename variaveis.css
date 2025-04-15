@@ -1,4 +1,28 @@
 :root {
   --vermelho-claro: #ee2211;
   --vermelho: #900;
+  --cor-fundo: #f7f7f7;
+  --cor-primaria: #000;
+  --cor-fundo-2: #fff;
+}
+
+.img-logo {
+  fill: var(--cor-primaria);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-primaria: #fff;
+    --cor-fundo: #070707;
+    --cor-fundo-2: #121212;
+  }
+  .img-logo {
+    filter: brightness(0) invert(1);
+  }
+
+  .subtitle {
+    color: rgba(255, 255, 255, 0.5);
+
+  }
+
 }
